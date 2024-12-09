@@ -34,11 +34,11 @@ class ResearchProject {
         this.publishedPapers.add(paper);
     }
 
-    public void addParticipant(Researcher researcher) {
-        if (researcher == null) {
-            throw new IllegalArgumentException("Only researchers can participate in a research project.");
+    public void addParticipant(Employee employee) throws ImposterException {
+        if (!(employee instanceof Researcher)) {
+            throw new ImposterException("Employee is not a Researcher and cannot join the Research Project.");
         }
-        this.participants.add(researcher);
+        participants.add((Researcher) employee);
     }
 
     public void printParticipants() {
