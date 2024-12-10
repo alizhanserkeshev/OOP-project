@@ -2,18 +2,16 @@ package SystemParts;
 
 import java.util.Date;
 
-public class Message {
+public class Comment {
     private String content;
     private String from;
-    private String to;
     private Date date;
-    public Message() {
+    public Comment() {
 
     }
-    public Message(String content, String from, String to, Date date) {
+    public Comment(String content, String from, Date date) {
         this.content = content;
         this.from = from;
-        this.to = to;
         this.date = date;
     }
 
@@ -23,14 +21,6 @@ public class Message {
 
     public void setContent(String content) {
         this.content = content;
-    }
-
-    public String getTo() {
-        return to;
-    }
-
-    public void setTo(String to) {
-        this.to = to;
     }
 
     public Date getDate() {
@@ -51,10 +41,9 @@ public class Message {
 
     @Override
     public String toString() {
-        return "Message{" +
+        return "Comment{" +
                 "content='" + content + '\'' +
                 ", from='" + from + '\'' +
-                ", to='" + to + '\'' +
                 ", date=" + date +
                 '}';
     }
