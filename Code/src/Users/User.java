@@ -1,9 +1,12 @@
 package Users;
 
 import java.io.Serializable;
+import SystemParts.Message;
+import java.io.Serializable;
+import java.util.Vector;
 
-public abstract class User implements Serializable{
-	
+public abstract class User implements Serializable {
+
 	private String login;  
 	private String password;
 	private String name;   
@@ -31,7 +34,7 @@ public abstract class User implements Serializable{
 	}
 	
 	public String toString() {
-		return "\n[UserInfo: \n" + "Name: " + getName() + "\n" + "Surname: " + getSurname() + "\n" + "id: " + getId() + "] \n";
+		return "\n[UserInfo: \n" + "Name: " + getName() + "\n" + "Surname: " + getSurname() + "\n" + "id: " + getId() + "\n";
 	}
 	    
 	public boolean equals(Object o) {
@@ -82,4 +85,5 @@ public abstract class User implements Serializable{
 	public void setId(String id) {
 			this.id = id;
 	}
+
 }
