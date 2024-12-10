@@ -39,9 +39,8 @@ public class Manager extends Employee implements Serializable, Comparable<Object
 		if (database.courses.contains(course)) {
 			System.out.println("Course is already exist!");
 		}
-		else {
 		database.courses.add(course);
-		System.out.println("Course added successfully!");}
+		System.out.println("Course added successfully!");
 	}
 
 	public void removeCourses(Course course) {
@@ -61,6 +60,7 @@ public class Manager extends Employee implements Serializable, Comparable<Object
 		database.news.add(news);
 		return true;
 	}
+
 
 	public boolean removeNews(News news) {
 		if (!database.news.contains(news)) return false;
@@ -96,10 +96,10 @@ public class Manager extends Employee implements Serializable, Comparable<Object
 		return this.getRequests();
 	}
 
+	@Override
 	public int compareTo(Object o) {
-		
+		// TODO Auto-generated method stub
 		return 0;
 	}
 }
-
 
