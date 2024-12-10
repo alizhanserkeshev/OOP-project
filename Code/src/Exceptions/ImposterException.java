@@ -1,11 +1,16 @@
 package Exceptions;
 
-public class ImposterException extends Exception {
-	 public ImposterException(String message) {
-	     super(message);
-	 }
+import Users.Researcher;
+import Users.User;
 
-	 public ImposterException(String message, Throwable cause) {
-	     super(message, cause);
-	 }
-	}
+public class ImposterException extends Exception {
+	public ImposterException(String message) {
+        super(message);
+    }
+
+    public static void checkParticipant(User participant) throws ImposterException {
+        if (!(participant instanceof Researcher)) {
+            throw new ImposterException("Non-researcher trying to join the project!");
+        }
+    }
+}
