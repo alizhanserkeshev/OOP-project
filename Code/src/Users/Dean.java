@@ -22,6 +22,7 @@ public class Dean {
 
 
 
+    @Override
     public String toString() {
         return "Dean{" +
                 "name='" + name + '\'' +
