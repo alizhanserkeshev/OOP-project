@@ -9,4 +9,3 @@ public class LowHIndexException extends Exception {
      super(message, cause);
  }
 }
-
