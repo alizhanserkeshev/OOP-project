@@ -1,7 +1,11 @@
 package Users;
 import Database.Data;
+import java.util.Date;
+
+import Enums.EmployeePost;
 
 public class Admin extends Employee{
+
 	public Admin(String login, String password, String name, String surname, String id, EmployeePost post, int salary, Date hireDate) {
 		super(login, password, name, surname, id, post, salary, hireDate);
 	}
@@ -43,4 +47,5 @@ public class Admin extends Employee{
 	public String toString() {
 		return super.toString();
 	}
+	
 }
