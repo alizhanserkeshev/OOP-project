@@ -6,5 +6,8 @@ public enum EmployeePost {
     RECTOR, VICE_RECTOR,
     LIBRARIAN,
     CLEANER,
-    SECURITY
+    SECURITY,
+    ADMIN,
+    MANAGER,
+    RESEARCHER
 }
