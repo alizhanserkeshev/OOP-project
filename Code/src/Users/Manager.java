@@ -39,8 +39,9 @@ public class Manager extends Employee implements Serializable, Comparable<Object
 		if (database.courses.contains(course)) {
 			System.out.println("Course is already exist!");
 		}
+		else {
 		database.courses.add(course);
-		System.out.println("Course added successfully!");
+		System.out.println("Course added successfully!");}
 	}
 
 	public void removeCourses(Course course) {

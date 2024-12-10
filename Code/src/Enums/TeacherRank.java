@@ -1,0 +1,6 @@
+package Enums;
+
+public enum TeacherRank {
+    FULL_PROFESSOR, ASSOCIATED_PROFESSOR, ASSISTANT_PROFESSOR,
+    SENIOR_LECTURER, LECTURER
+}
