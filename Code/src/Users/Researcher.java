@@ -46,26 +46,6 @@ public class Researcher extends User{
 		System.out.println(database.papers);
 	}
 	
-	public void getCitation(int num, String format) {
-		try {
-			if(format.equalsIgnoreCase("PlainText")) {
-				System.out.println(database.papers.elementAt(num).getTopic() + " | " + database.papers.elementAt(num).getDate() + " | " + database.papers.elementAt(num).getPages() + " | " + database.papers.elementAt(num).getPublisher());
-			}
-			else if(format.equalsIgnoreCase("Bibtex")) {
-				System.out.println("{\n  authors = {" + database.papers.elementAt(num).getAuthors() + "},\n"
-	                + "  topic = {" + database.papers.elementAt(num).getTopic() + "},\n"
-	                + "  date = {" + database.papers.elementAt(num).getDate() + "}\n"
-	                + "}");
-			}
-			else {
-				NoSuchFormatException.invalidFormat();
-			}
-		}
-		catch(NoSuchFormatException e){
-			System.out.println(e.getMessage());
-		}
-	}
-	
 	public void joinParticipant(User u) throws ImposterException {
 		ImposterException.checkParticipant(u);
 		Researcher r = (Researcher) u;
