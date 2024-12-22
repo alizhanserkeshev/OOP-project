@@ -5,5 +5,5 @@
  * 
  */
 module Code {
-	requires java.sql;
+    requires java.sql;
 }
