@@ -1,6 +1,9 @@
 package Finance;
 
+import java.sql.Date;
 import java.util.Vector;
+
+import Enums.EmployeePost;
 import Users.Employee;
 
 class FinanceManager extends Employee {

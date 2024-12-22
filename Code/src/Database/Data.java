@@ -50,9 +50,9 @@ public class Data implements Serializable {
 	}
 
 	public String toString() {
-		return "Data [users=" + users + ", courses=" + courses + ", marks=" + marks + ", students=" + students
-				+ ", teachers=" + teachers + ", orders=" + orders + ", papers=" + papers + ", projects=" + projects
-				+ ", news=" + news + ", participants=" + participants + "]";
+		return "Data [users=" + users + "\n" + "courses=" + courses + ", marks=" + marks + ", students=" + students
+				+ "\n" + "teachers=" + teachers + ", orders=" + orders + ", papers=" + papers +  "\n" + "projects=" + projects
+				+ ", news=" + news + ", participants=" + participants + "]" + "\n";
 	}
 
 	public User authenticateUser(String login, String password) {

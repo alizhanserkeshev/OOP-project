@@ -9,5 +9,6 @@ public enum EmployeePost {
     SECURITY,
     ADMIN,
     MANAGER,
-    RESEARCHER
+    RESEARCHER,
+    TEACHER
 }

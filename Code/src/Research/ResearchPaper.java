@@ -66,18 +66,6 @@ public class ResearchPaper implements Comparable<ResearchPaper>, Serializable{
 		this.authors = authors;
 	}
 
-	public String getCitation(String format) {
-        if (format.equalsIgnoreCase("Plain Text")) {
-            return String.format("%s, %s, %s, %d citations, %d pages, %s", 
-                                 authors, title, journal, citations, pages, publicationDate);
-        } else if (format.equalsIgnoreCase("Bibtex")) {
-            return String.format("@article{%s, author = {%s}, title = {%s}, journal = {%s}, year = {%tY}}", 
-                                 title, authors, title, journal, publicationDate);
-        } else {
-            throw new NoSuchFormatException("Unsupported format. Use 'Plain Text' or 'Bibtex'.");
-        }
-    }
-	
 	public int compareTo(ResearchPaper o) {
 		if(this.getPages() > o.getPages()) return 1;
 		if(this.getPages() < o.getPages()) return -1;
