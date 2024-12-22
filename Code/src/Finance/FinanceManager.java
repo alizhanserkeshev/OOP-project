@@ -1,6 +1,7 @@
 package Finance;
 
 import java.util.Vector;
+import Users.Employee;
 
 class FinanceManager extends Employee {
 
